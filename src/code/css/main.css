@@ -6,6 +6,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header, main, footer {
+    padding: 20px;
+}
+
 .big-header {
     position: relative;
     /* background-color: rgb(2, 4, 9); */
@@ -63,13 +67,32 @@ h1 {
     }
 }
 
-main {
-    padding: 20px;
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(232, 135, 109);
+}
+
+nav ul li a:active, nav ul li a.active {
+    color: rgb(56, 109, 227);;
 }
 
 footer {
     background-color: rgb(2, 4, 9);
     color: #fff;
-    padding: 20px;
     text-align: center;
 }
