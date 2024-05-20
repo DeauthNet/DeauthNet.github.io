@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(14, 17, 22);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.big-header {
+    background-color: rgb(2, 4, 9);
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-shadow: 0 0 5px #fff; 
+}
+
+.scroll-message {
+    margin-top: 20px;
+    animation: bob-glow 1.5s infinite alternate;
+    cursor: pointer;
+
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff;
+    }
+    to {
+        text-shadow: 0 0 10px #fff;
+    }
+}
+
+@keyframes bob-glow {
+    from {
+        transform: translateY(0);
+        text-shadow: 0 0 5px #fff;
+    }
+    to {
+        transform: translateY(5px);
+        text-shadow: 0 0 10px #fff;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(2, 4, 9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
