@@ -7,24 +7,40 @@ body {
 }
 
 .big-header {
-    background-color: rgb(2, 4, 9);
+    position: relative;
+    /* background-color: rgb(2, 4, 9); */
     padding: 20px;
     text-align: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+}
+
+.big-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/imgs/background.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
 }
 
 h1 {
-    text-shadow: 0 0 5px #fff; 
+    text-shadow: 0 0 5px #fff;
 }
 
 .scroll-message {
     margin-top: 20px;
     animation: bob-glow 1.5s infinite alternate;
     cursor: pointer;
-
 }
 
 @keyframes glow {
