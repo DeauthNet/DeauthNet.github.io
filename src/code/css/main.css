@@ -62,7 +62,7 @@ h1 {
         text-shadow: 0 0 5px #fff;
     }
     to {
-        transform: translateY(5px);
+        transform: translateY(15px);
         text-shadow: 0 0 10px #fff;
     }
 }
