@@ -43,7 +43,7 @@ h1 {
 
 .scroll-message {
     margin-top: 20px;
-    animation: bob 1.5s infinite alternate;
+    animation: bob 2.5s infinite alternate;
     cursor: pointer;
 }
 
@@ -61,7 +61,7 @@ h1 {
         transform: translateY(0);
     }
     to {
-        transform: translateY(10px);
+        transform: translateY(150px);
     }
 }
 
