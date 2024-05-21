@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 .message-box .material-icons {
-    margin-right: 0px;
     vertical-align: middle;
+    text-align: center;
 }
 
 .warning-box {
