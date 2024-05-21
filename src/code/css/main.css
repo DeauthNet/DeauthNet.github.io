@@ -67,13 +67,18 @@ h1 {
     }
 }
 
+header h1 {
+    display: inline;
+    float: left;
+}
+
 nav ul {
     list-style-type: none;
 }
 
 nav ul li {
     display: inline;
-    float: left;
+    float: right;
 }
 
 nav ul li a {
