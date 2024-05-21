@@ -61,7 +61,7 @@ h1 {
         transform: translateY(0);
     }
     to {
-        transform: translateY(50px);
+        transform: translateY(25px);
     }
 }
 

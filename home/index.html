@@ -7,16 +7,38 @@
     <link rel="icon" type="image/x-icon" href="/src/imgs/Logo.png">
     <link rel="stylesheet" href="/src/code/css/main.css">
     <link rel="stylesheet" href="/src/code/css/messages.css">
+
+    <style>
+        #datetime {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <script>
+        function updateDateTime() {
+            const now = new Date()
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            const milliseconds= now.getMilliseconds();
+            const dateTimeString = now.toLocaleString();
+            document.getElementById('datetime').innerText = "Current time: " + hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
+        }
+        setInterval(updateDateTime, 1);
+        window.onload = updateDateTime;
+    </script>
 </head>
 <body>
-
+    <div id="datetime"></div>
     <div class="big-header">
         <h1>Welcome to DeauthNet!</h1>
         <div class="scroll-message" onclick="scrollSmoothly()">
             <h4>&#x1F447; Scroll down &#x1F447;</h4>
         </div>
     </div>
-
     <header id="scroll-to-here">
         <h1>Home</h1>
         <nav>
