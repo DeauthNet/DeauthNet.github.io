@@ -86,11 +86,16 @@ nav ul li a {
     transition: 0.3s;
 }
 
-nav ul li a:hover {
+a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+a:hover {
     color: rgb(232, 135, 109);
 }
 
-nav ul li a:active, nav ul li a.active {
+a:active, a.active {
     color: rgb(56, 109, 227);;
 }
 
@@ -98,11 +103,6 @@ footer {
     background-color: rgb(2, 4, 9);
     color: #fff;
     text-align: center;
-}
-
-
-a {
-    color: white;
 }
 
 iframe {
