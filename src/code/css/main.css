@@ -43,7 +43,7 @@ h1 {
 
 .scroll-message {
     margin-top: 20px;
-    animation: bob-glow 1.5s infinite alternate;
+    animation: bob 1.5s infinite alternate;
     cursor: pointer;
 }
 
@@ -56,14 +56,12 @@ h1 {
     }
 }
 
-@keyframes bob-glow {
+@keyframes bob {
     from {
         transform: translateY(0);
-        text-shadow: 0 0 5px #fff;
     }
     to {
-        transform: translateY(15px);
-        text-shadow: 0 0 10px #fff;
+        transform: translateY(10px);
     }
 }
 
